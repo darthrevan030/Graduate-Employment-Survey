@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import GESDashboard from "./components/ges_dashboard.jsx";
+import GESDashboard from "./components/gesDashboard.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
