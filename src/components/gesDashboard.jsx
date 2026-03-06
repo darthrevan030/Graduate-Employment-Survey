@@ -1,12 +1,11 @@
 import { useState } from "react";
-import {useBreakpoint} from "..hooks/useBreakpoint.js";
-// import { useBreakpoint } from "..useBreakpoint.js";
-import { UNI_COLORS } from "..theme.js";
-import TabBtn from "..TabBtn.jsx";
-import OverviewTab from "..OverviewTab.jsx";
-import ByCategoryTab from "..ByCategoryTab.jsx";
-import ByUniversityTab from "..ByUniversityTab.jsx";
-import CompareTab from "..CompareTab.jsx";
+import { useBreakpoint } from "../hooks/useBreakpoint.js";
+import { UNI_COLORS } from "../constants/theme.js";
+import TabBtn from "../components/common/TabBtn.jsx";
+import OverviewTab from "../components/tabs/OverviewTab.jsx";
+import ByCategoryTab from "../components/tabs/ByCategoryTab.jsx";
+import ByUniversityTab from "../components/tabs/ByUniversityTab.jsx";
+import CompareTab from "../components/tabs/CompareTab.jsx";
 
 export default function GESDashboard() {
   const [tab, setTab] = useState("overview");
@@ -48,7 +47,7 @@ export default function GESDashboard() {
         <div>
           <div
             style={{
-              color: "#333",
+              color: "#ececec",
               fontSize: 10,
               letterSpacing: 2,
               textTransform: "uppercase",
@@ -67,7 +66,7 @@ export default function GESDashboard() {
           >
             Graduate Employment Survey
           </h1>
-          <p style={{ color: "#444", fontSize: 11, margin: "4px 0 0 0" }}>
+          <p style={{ color: "#9d9d9d", fontSize: 11, margin: "4px 0 0 0" }}>
             1,672 records · 6 universities · 13 years · 2025 data included
           </p>
         </div>
@@ -129,7 +128,7 @@ export default function GESDashboard() {
       <div
         style={{
           marginTop: 20,
-          color: "#4c5063",
+          color: "#babed1",
           fontSize: 10,
           textAlign: "center",
         }}
