@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { useBreakpoint } from "./src/hooks/useBreakpoint.js";
-import { UNI_COLORS } from "./src/constants/theme.js";
-import TabBtn from "./src/components/common/TabBtn.jsx";
-import OverviewTab from "./src/components/tabs/OverviewTab.jsx";
-import ByCategoryTab from "./src/components/tabs/ByCategoryTab.jsx";
-import ByUniversityTab from "./src/components/tabs/ByUniversityTab.jsx";
-import CompareTab from "./src/components/tabs/CompareTab.jsx";
+import { useBreakpoint } from "..useBreakpoint.js";
+import { UNI_COLORS } from "..theme.js";
+import TabBtn from "..TabBtn.jsx";
+import OverviewTab from "..OverviewTab.jsx";
+import ByCategoryTab from "..ByCategoryTab.jsx";
+import ByUniversityTab from "..ByUniversityTab.jsx";
+import CompareTab from "..CompareTab.jsx";
 
 export default function GESDashboard() {
   const [tab, setTab] = useState("overview");
@@ -25,7 +25,7 @@ export default function GESDashboard() {
         color: "#e0e0e0",
         fontFamily: "'DM Sans', sans-serif",
         padding: isMobile ? "16px 12px" : "28px 24px",
-        maxWidth: 1200,
+        maxWidth: "100vw",
         margin: "0 auto",
       }}
     >
@@ -128,7 +128,7 @@ export default function GESDashboard() {
       <div
         style={{
           marginTop: 20,
-          color: "#1e2130",
+          color: "#4c5063",
           fontSize: 10,
           textAlign: "center",
         }}
