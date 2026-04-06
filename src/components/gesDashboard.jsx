@@ -7,6 +7,10 @@ import ByCategoryTab from "../components/tabs/ByCategoryTab.jsx";
 import ByUniversityTab from "../components/tabs/ByUniversityTab.jsx";
 import CompareTab from "../components/tabs/CompareTab.jsx";
 
+import { inject } from "@vercel/analytics"
+
+inject()
+
 export default function GESDashboard() {
   const [tab, setTab] = useState("overview");
   const { isMobile } = useBreakpoint();
